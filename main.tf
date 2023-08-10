@@ -64,6 +64,15 @@ resource "aws_s3_object" "styles" {
   content_type = "text/html"
 }
 
+resource "aws_s3_object" "resume_pdf" {
+  bucket = aws_s3_bucket.resume_bucket.id
+  key = "JPResumeV2.pdf"
+  source = "JPResumeV2.pdf"
+
+  acl = "public-read"
+  content_type = "text/pdf"
+}
+
 resource "aws_s3_bucket_website_configuration" "resume-s3-site" {
   bucket = aws_s3_bucket.resume_bucket.id
 

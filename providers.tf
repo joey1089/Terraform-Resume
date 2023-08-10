@@ -5,7 +5,7 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "~> 5.10.0"      # default was 5.0 version changed it to 5.10 for fixing issues with bucket acl
+      version = "~> 5.10.0"      # default was 5.11.0 version changed it to 5.10.0 for fixing issues with bucket acl
     }
   }
 }
