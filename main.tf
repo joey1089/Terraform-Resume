@@ -10,7 +10,7 @@ resource "aws_s3_bucket" "resume_bucket" {
   }
 }
 
-resource "aws_s3_bucket_ownership_controls" "example" {
+resource "aws_s3_bucket_ownership_controls" "bucket_ownership_ctrl" {
   bucket = aws_s3_bucket.resume_bucket.id
 
   rule {
@@ -18,7 +18,7 @@ resource "aws_s3_bucket_ownership_controls" "example" {
   }
 }
 
-resource "aws_s3_bucket_public_access_block" "example" {
+resource "aws_s3_bucket_public_access_block" "bucket_access_policy" {
   bucket = aws_s3_bucket.resume_bucket.id
 
   block_public_acls       = false
@@ -29,8 +29,8 @@ resource "aws_s3_bucket_public_access_block" "example" {
 
 resource "aws_s3_bucket_acl" "bucket_acl" {
   depends_on = [
-    aws_s3_bucket_ownership_controls.example,
-    aws_s3_bucket_public_access_block.example,
+    aws_s3_bucket_ownership_controls.bucket_ownership_ctrl,
+    aws_s3_bucket_public_access_block.bucket_access_policy,
   ]
 
   bucket = aws_s3_bucket.resume_bucket.id
@@ -66,8 +66,8 @@ resource "aws_s3_object" "styles" {
 
 resource "aws_s3_object" "resume_pdf" {
   bucket = aws_s3_bucket.resume_bucket.id
-  key = "JPResumeV2.pdf"
-  source = "JPResumeV2.pdf"
+  key = "jpresumev2.pdf"
+  source = "jpresumev2.pdf"
 
   acl = "public-read"
   content_type = "text/pdf"
