@@ -39,6 +39,7 @@ terraform.rc
 # Ignore vscode
 .vscode
 
-# Ignore resume / .pdf file
+# Ignore any .doc .txt .pdf file
 *.pdf
+*.txt
 

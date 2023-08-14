@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joseph's Portfolio</title>
+    <title>Joseph Peter's Portfolio</title>
     <!-- <link rel="stylesheet" href="styles.css">  -->
     <style>
                     /* Reset some default styles */
@@ -14,15 +14,15 @@
 
                     /* Set a background color and text color */
                     body {
-                        background-color: #f5f5f5;
-                        color: #333;
+                        background-color: #f0ffe6;
+                        color: #000000;
                         font-family: Arial, sans-serif;
                     }
 
                     /* Header styles */
                     header {
-                        background-color: #222;
-                        color: #fff;
+                        background-color: #b3e464;
+                        color: #2b1414;
                         padding: 20px;
                         text-align: center;
                     }
@@ -41,22 +41,23 @@
                     }
 
                     nav a {
-                        text-decoration: none;
-                        color: #fff;
+                        text-decoration: rgb(122, 88, 151);
+                        color: #5e0270;
+                        padding: 5px;
                         transition: color 0.3s;
                     }
 
                     nav a:hover {
-                        color: #ff9900;
+                        color: #024107;
                     }
 
                     /* Section styles */
                     section {
-                        padding: 40px;
+                        padding: 20px;
                     }
 
                     section h2 {
-                        margin-bottom: 20px;
+                        margin-bottom: 10px;
                         font-size: 24px;
                     }
 
@@ -88,14 +89,14 @@
                     footer {
                         text-align: center;
                         padding: 20px;
-                        background-color: #222;
-                        color: #fff;
+                        background-color: #b3e464;
+                        color: #000000;
                     }
 
                     /* Media queries for responsive design */
                     @media screen and (max-width: 768px) {
                         header h1 {
-                            font-size: 28px;
+                            font-size: 32px;
                         }
 
                         nav ul li {
@@ -111,7 +112,7 @@
 </head>
 <body>
     <header>
-        <h1>Joseph Peter's Portfolio</h1>
+        <h1>Welcome to my portfolio</h1>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
@@ -124,10 +125,21 @@
     
     <section id="about">
         <h2>About Me</h2>
-        <p>Hi, I'm Joseph Peter, Results-driven former Software Engineer and Quality Control professional with a proven track record of
-            successfully done DevOps related projects using AWS, Linux, Python, Terraform, Docker and Kubernetes. Seeking
+        <p>This is Joseph Peter, I'm a results-driven former Software Engineer and Quality Control professional with a proven track record of
+            successfully done DevOps related projects using AWS, Linux, Python, Terraform, Docker, Kubernetes, Jenkins and CI/CD pipeline. Seeking
             a challenging role as a Cloud DevOps Engineer to apply my technical expertise and leadership skills to drive
             operational efficiency and quality. My expertise lies in combining my former software development and QA experiences to deliver outstanding postive results.</p>
+    </section>
+   
+    <section id="skillset">
+        <h2>Skill Set</h2>
+        <p><b>DevOps Tools</b>: Amazon Web Services, Identity and Access Management(IAM), ECS, EC2, ECR, S3, RDS, VPC, NAT
+            Gateways, CloudFront, CloudFormation, AWS CodeBuild, AWS CodeDeploy, CloudWatch, SQS, SNS, Lambda; Git;
+            Linux; bash; Git Action; Terraform; Docker; Kubernetes; Shell Scripting; GitHub; CI/CD; Apache; Unix; ELB; Nginx;
+            Pipeline, Jenkins, Ansible, Azure.           
+           </p>
+            <p><b>Deployments</b>: Docker, Kubernetes and Terraform.</p>
+            <p><b>Languages</b>: Python; HTML; CSS; MySQL</p>
     </section>
 
     <section id="resume">
@@ -140,32 +152,45 @@
         
         <div class="project">
             <img src="project1.jpg" alt="Project 1">
-            <h3>Project 1</h3>
-            <p>A stunning e-commerce website for a luxury fashion brand. Implemented responsive design and integrated secure payment gateways.</p>
+            <h3><a href="https://awstip.com/dive-into-aws-three-tier-architecture-30fbcdb485a0">Implementing Three Tier Architecture on AWS Cloud</a></h3>
+            <p>Deployment of Three tier architecture with a Web, App server and a RDS Database on AWS Cloud.</p>
         </div>
         
         <div class="project">
             <img src="project2.jpg" alt="Project 2">
-            <h3>Project 2</h3>
-            <p>A dynamic portfolio website for an artist, featuring a unique gallery layout and smooth animations to showcase their work.</p>
+            <h3><a href="https://medium.com/aws-tip/automation-of-ec2-instance-starting-and-stopping-1dad523f591c">Automated EC2 instance management, save more company resources</a></h3>
+            <p>Automate Starting and Stopping of EC2 Instances with python boto3 and learn How to save money for your company by efficiently using cloud assets.</p>
         </div>
         
         <div class="project">
             <img src="project3.jpg" alt="Project 3">
-            <h3>Project 3</h3>
-            <p>An interactive travel blog with a custom map integration, allowing users to explore destinations and read personal experiences.</p>
+            <h3><a href="https://medium.com/towards-aws/building-with-kubernetes-85d94262dc3a">Deploy with Kubernetes and scale it!</a></h3>
+            <p>Demonstrated Kubernetes deployment and scaling, Learn to deploy with Kubernetes and scale it with replicas.</p>
         </div>
+
+        <div class="project">
+            <img src="project3.jpg" alt="Project 4">
+            <h3><a href="https://medium.com/faun/connect-to-ec2-instances-using-aws-ssm-and-vpc-endpoints-2228b93ed2a6">Master EC2 Instance Connectivity with AWS SSM, VPC Endpoints, and EC2 Connect Endpoints!</a></h3>
+            <p>EC2 Instance Connectivity with AWS SSM, VPC Endpoints, and EC2 Connect Endpoint. Establish private connection with EC2 private instances without the Bastion Host and no need to create SSH keys.</p>
+        </div>
+
+        <div class="project">
+            <img src="project3.jpg" alt="Project 5">
+            <h3><a href="https://medium.com/gitconnected/build-custom-nginx-image-using-dockerfile-and-push-it-to-ecr-7aced9ced256">Created custom Docker Nginx image for Amazon ECR</a></h3>
+            <p>Learn about Docker and deploy a custom Docker Nginx image by using Dockerfile and push it to Amazon ECR.</p>
+        </div>
+
     </section>
     
     <section id="contact">
         <h2>Contact Me</h2>
-        <p>If you're interested in collaborating or have any inquiries, feel free to reach out to me:</p>
-        <p>Twitter: @josephvpeter</p>
-        <p>Phone: (123) 456-7890</p>
+        <p>If you're interested in collaborating, hiring or have any other inquiries, feel free to reach out to me:</p>
+        <p>Twitter:  josephvpeter</p>
+        <p>LinkedIn: linkedin.com/in/josephvpeter7/</p>        
     </section>
     
     <footer>
-        <p>&copy; 2023 Joseph's Portfolio. All rights reserved.</p>
+        <p>&copy; 2023 Joseph Peter's Portfolio. All rights reserved.</p>
     </footer>
 </body>
 </html>
