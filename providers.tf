@@ -12,6 +12,8 @@ terraform {
 
 # Configure the AWS Provider
 provider "aws" {
+  # access_key = "ACCESS_KEY_HERE"           # its secure to add these keys in ter
+  # secret_key = "SECRET_KEY_HERE"
   region = "us-east-1"
 }
 
