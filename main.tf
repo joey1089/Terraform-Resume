@@ -13,6 +13,9 @@ resource "aws_s3_bucket" "resume_bucket" {
 resource "aws_s3_bucket_ownership_controls" "bucket_ownership_ctrl" {
   bucket = aws_s3_bucket.resume_bucket.id
 
+  # # Allow deletion of non-empty bucket
+  # force_destroy = true
+
   rule {
     object_ownership = "BucketOwnerPreferred"
   }
