@@ -15,3 +15,9 @@ output "bucket_access_policy" {
   value = aws_s3_bucket_acl.bucket_acl.acl  # values not sure  
 }
 
+output "s3_bucket_region" {
+  description = "The AWS region this bucket resides in."
+  value       = aws_s3_bucket.resume_bucket.region
+}
+
+
